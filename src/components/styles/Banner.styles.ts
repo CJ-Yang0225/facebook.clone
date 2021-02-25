@@ -15,7 +15,8 @@ export const BannerStart = styled.div`
   display: flex;
   justify-content: space-evenly;
 
-  img {
+  .banner__logo {
+    padding-left: 16px;
     height: 40px;
   }
 

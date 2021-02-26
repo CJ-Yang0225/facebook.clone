@@ -1,19 +1,24 @@
 import React from "react";
+import { AppBody } from "./components/styles/App.styles";
 import "./App.css";
-import Banner from "./components/Banner";
+import TopNav from "./components/TopNav";
+import Sidebar from "./components/Sidebar";
 
-function App() {
+const App = () => {
   return (
-    <div className="app">
-      {/* Banner */}
-      <Banner />
+    <>
+      {/* TopNav */}
+      <TopNav />
 
       {/* App body */}
-      {/* Sidebar */}
-      {/* Feed */}
-      {/* Widgets */}
-    </div>
+      <AppBody>
+        <Sidebar />
+        {/* Region */}
+        {/* Feed */}
+        {/* Widgets */}
+      </AppBody>
+    </>
   );
-}
+};
 
 export default App;

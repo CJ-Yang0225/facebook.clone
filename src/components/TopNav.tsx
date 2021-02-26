@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import {
-  BannerContainer,
-  BannerStart,
-  BannerCenter,
-  BannerEnd,
-} from "./styles/Banner.styles";
+  TopNavContainer,
+  TopNavStart,
+  TopNavCenter,
+  TopNavEnd,
+} from "./styles/TopNav.styles";
 import {
   Search,
   Home,
@@ -23,43 +23,43 @@ import fbLogo from "../images/f_logo_RGB-Hex-Blue_512.png";
 
 type HeaderProps = {};
 
-const Banner: React.FC<HeaderProps> = () => {
+const TopNav: React.FC<HeaderProps> = () => {
   return (
-    <BannerContainer>
-      <BannerStart>
-        <img src={fbLogo} alt="Facebook Logo" className="banner__logo" />
-        <div className="banner__search">
+    <TopNavContainer>
+      <TopNavStart>
+        <img src={fbLogo} alt="Facebook Logo" className="topNav__logo" />
+        <div className="topNav__search">
           <Search />
           <input
             type="text"
-            className="banner__input"
+            className="topNav__input"
             placeholder="搜尋 Facebook"
           />
         </div>
-      </BannerStart>
-      <BannerCenter>
-        <div className="banner__option banner__option--active">
+      </TopNavStart>
+      <TopNavCenter>
+        <div className="topNav__option topNav__option--active">
           <Home fontSize="large" />
         </div>
-        <div className="banner__option">
+        <div className="topNav__option">
           <PeopleOutline fontSize="large" />
         </div>
-        <div className="banner__option">
+        <div className="topNav__option">
           <OndemandVideo fontSize="large" />
         </div>
-        <div className="banner__option">
+        <div className="topNav__option">
           <Storefront fontSize="large" />
         </div>
-        <div className="banner__option">
+        <div className="topNav__option">
           <SupervisedUserCircle fontSize="large" />
         </div>
-      </BannerCenter>
-      <BannerEnd>
-        <div className="banner__info">
+      </TopNavCenter>
+      <TopNavEnd>
+        <div className="topNav__info">
           <AccountCircle fontSize="large" />
           <h4>Jerold Yang</h4>
         </div>
-        <div className="banner__buttonGroup">
+        <div className="topNav__buttonGroup">
           <IconButton>
             <Add />
           </IconButton>
@@ -73,9 +73,9 @@ const Banner: React.FC<HeaderProps> = () => {
             <ExpandMore />
           </IconButton>
         </div>
-      </BannerEnd>
-    </BannerContainer>
+      </TopNavEnd>
+    </TopNavContainer>
   );
 };
 
-export default Banner;
+export default TopNav;

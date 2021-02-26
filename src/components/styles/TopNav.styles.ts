@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const BannerContainer = styled.div`
+export const TopNavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,16 +11,16 @@ export const BannerContainer = styled.div`
   box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
 `;
 
-export const BannerStart = styled.div`
+export const TopNavStart = styled.div`
   display: flex;
   justify-content: space-evenly;
 
-  .banner__logo {
+  .topNav__logo {
     padding-left: 16px;
     height: 40px;
   }
 
-  .banner__search {
+  .topNav__search {
     display: flex;
     align-items: center;
     background-color: #eff2f5;
@@ -36,12 +36,12 @@ export const BannerStart = styled.div`
   }
 `;
 
-export const BannerCenter = styled.div`
+export const TopNavCenter = styled.div`
   display: flex;
   flex: 1;
   justify-content: center;
 
-  .banner__option {
+  .topNav__option {
     cursor: pointer;
     padding: 4px 28px;
 
@@ -72,12 +72,12 @@ export const BannerCenter = styled.div`
   }
 `;
 
-export const BannerEnd = styled.div`
+export const TopNavEnd = styled.div`
   display: flex;
   /* justify-content: space-around; */
   align-items: center;
 
-  .banner__info {
+  .topNav__info {
     display: flex;
     align-items: center;
 
@@ -86,7 +86,7 @@ export const BannerEnd = styled.div`
     }
   }
 
-  .banner__buttonGroup {
+  .topNav__buttonGroup {
     display: flex;
   }
 `;

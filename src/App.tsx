@@ -1,23 +1,24 @@
 import React from "react";
-import { AppBody } from "./components/styles/App.styles";
+import { AppBody } from "./App.styles";
 import "./App.css";
-import TopNav from "./components/TopNav";
-import Sidebar from "./components/Sidebar";
+import TopNav from "./components/TopNav/TopNav";
+import Sidebar from "./components/Sidebar/Sidebar";
+
 
 const App = () => {
   return (
-    <>
+    <div className="app">
       {/* TopNav */}
       <TopNav />
 
       {/* App body */}
-      <AppBody>
+      <AppBody className="app__body">
         <Sidebar />
-        {/* Region */}
+        {/* StoryReel */}
         {/* Feed */}
         {/* Widgets */}
       </AppBody>
-    </>
+    </div>
   );
 };
 

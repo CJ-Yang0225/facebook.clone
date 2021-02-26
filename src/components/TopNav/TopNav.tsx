@@ -4,7 +4,7 @@ import {
   TopNavStart,
   TopNavCenter,
   TopNavEnd,
-} from "./styles/TopNav.styles";
+} from "./TopNav.styles";
 import {
   Search,
   Home,
@@ -19,14 +19,14 @@ import {
   ExpandMore,
 } from "@material-ui/icons";
 import { IconButton } from "@material-ui/core";
-import fbLogo from "../images/f_logo_RGB-Hex-Blue_512.png";
+import fbLogo from "../../images/f_logo_RGB-Hex-Blue_512.png";
 
 type HeaderProps = {};
 
-const TopNav: React.FC<HeaderProps> = () => {
+const TopNav: React.FC = () => {
   return (
-    <TopNavContainer>
-      <TopNavStart>
+    <TopNavContainer className="topNav">
+      <TopNavStart className="topNav__start">
         <img src={fbLogo} alt="Facebook Logo" className="topNav__logo" />
         <div className="topNav__search">
           <Search />
@@ -37,7 +37,7 @@ const TopNav: React.FC<HeaderProps> = () => {
           />
         </div>
       </TopNavStart>
-      <TopNavCenter>
+      <TopNavCenter className="topNav__center">
         <div className="topNav__option topNav__option--active">
           <Home fontSize="large" />
         </div>
@@ -54,7 +54,7 @@ const TopNav: React.FC<HeaderProps> = () => {
           <SupervisedUserCircle fontSize="large" />
         </div>
       </TopNavCenter>
-      <TopNavEnd>
+      <TopNavEnd className="topNav__end">
         <div className="topNav__info">
           <AccountCircle fontSize="large" />
           <h4>Jerold Yang</h4>

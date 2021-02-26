@@ -1,6 +1,6 @@
 import React from "react";
-import { SidebarWrapper } from "./styles/Sidebar.styles";
-import SidebarRow from "./SidebarRow";
+import { SidebarWrapper } from "./Sidebar.styles";
+import SidebarRow from "./SidebarTab";
 import {
   AccountCircle,
   DateRange,
@@ -14,9 +14,7 @@ import {
   VideoLibrary,
 } from "@material-ui/icons";
 
-export type SidebarProps = {};
-
-const Sidebar: React.FC<SidebarProps> = () => {
+const Sidebar: React.FC = () => {
   return (
     <SidebarWrapper className="sidebar">
       <SidebarRow title="CJ-Yang0225" src="" Icon={GitHub} />

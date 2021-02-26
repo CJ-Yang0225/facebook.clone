@@ -2,11 +2,12 @@ import styled from "@emotion/styled";
 
 export const SidebarWrapper = styled.div`
   padding: 16px;
+  width: 25%;
 
-  .sidebar__row {
+  .sidebar__tab {
     display: flex;
     align-items: center;
-    width: 25%;
+
     padding: 0px 8px;
     border-radius: 8px;
     cursor: pointer;

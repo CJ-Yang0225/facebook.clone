@@ -74,7 +74,6 @@ export const TopNavCenter = styled.div`
 
 export const TopNavEnd = styled.div`
   display: flex;
-  /* justify-content: space-around; */
   align-items: center;
 
   .topNav__info {

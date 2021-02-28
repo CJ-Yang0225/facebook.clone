@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar } from "@material-ui/core";
-import { StoryWrapper } from "./StoryReel.styles";
+import { StoryWrapper } from "./Story.styles";
 
 export type StoryProps = {
   profileSrc: string;

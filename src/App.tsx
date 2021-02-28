@@ -1,6 +1,5 @@
 import React from "react";
 import { AppBody } from "./App.styles";
-import "./App.css";
 import TopNav from "./components/TopNav/TopNav";
 import Sidebar from "./components/Sidebar/Sidebar";
 import StoryReel from "./components/StoryReel/StoryReel";

@@ -21,8 +21,6 @@ import {
 import { IconButton } from "@material-ui/core";
 import fbLogo from "../../images/f_logo_RGB-Hex-Blue_512.png";
 
-type HeaderProps = {};
-
 const TopNav: React.FC = () => {
   return (
     <TopNavContainer className="topNav">

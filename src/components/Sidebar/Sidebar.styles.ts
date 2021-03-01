@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 
-export const SidebarWrapper = styled.div`
+export const SidebarContainer = styled.div`
   padding: 16px;
-  width: 25%;
+  flex-grow: 0.3;
 
   .sidebar__tab {
     display: flex;

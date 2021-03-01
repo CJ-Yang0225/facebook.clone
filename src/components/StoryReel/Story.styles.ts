@@ -6,7 +6,8 @@ type StoryWrapperProps = {
 
 export const StoryWrapper = styled.div<StoryWrapperProps>`
   position: relative;
-  width: 120px;
+  flex-grow: 1;
+  /* max-width: 120px; */
   height: 200px;
   background-position: center center;
   background-size: cover;
@@ -15,7 +16,7 @@ export const StoryWrapper = styled.div<StoryWrapperProps>`
     url(${(props: StoryWrapperProps) => props.image});
   box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
-  margin-right: 10px;
+  margin:0 4px;
   transition: transform 100ms ease-in;
   cursor: pointer;
 

@@ -7,7 +7,6 @@ type StoryWrapperProps = {
 export const StoryWrapper = styled.div<StoryWrapperProps>`
   position: relative;
   flex-grow: 1;
-  /* max-width: 120px; */
   height: 200px;
   background-position: center center;
   background-size: cover;

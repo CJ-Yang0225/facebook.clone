@@ -1,5 +1,6 @@
-import { Avatar } from "@material-ui/core";
 import React from "react";
+import { Avatar } from "@material-ui/core";
+import { SidebarTabWrapper } from "./SidebarTab.styles";
 
 export type SidebarTabProps = {
   title: string;
@@ -9,11 +10,11 @@ export type SidebarTabProps = {
 
 const SidebarTab: React.FC<SidebarTabProps> = ({ title, src, Icon }) => {
   return (
-    <div className="sidebar__tab">
+    <SidebarTabWrapper className="sidebar__tab">
       {src && <Avatar src={src} />}
       {Icon && <Icon />}
       <h4>{title}</h4>
-    </div>
+    </SidebarTabWrapper>
   );
 };
 

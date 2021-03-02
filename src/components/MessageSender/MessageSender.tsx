@@ -31,7 +31,7 @@ const MessageSender = () => {
           />
           <input
             type="text"
-            placeholder="Image URL (可選)"
+            placeholder="Image URL (Optional)"
             value={imageUrl}
             onChange={({ target: { value } }) => setImageUrl(value)}
           />

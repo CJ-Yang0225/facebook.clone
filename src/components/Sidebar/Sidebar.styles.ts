@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 
 export const SidebarContainer = styled.div`
   padding: 16px;
-  flex-grow: 0.3;
 
   .sidebar__tab {
     display: flex;

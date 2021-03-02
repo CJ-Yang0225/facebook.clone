@@ -1,19 +1,9 @@
 import styled from "@emotion/styled";
 
-export const TopNavContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: white;
-  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
-`;
-
 export const TopNavStart = styled.div`
   display: flex;
   justify-content: space-evenly;
+  width: 295px;
 
   .topNav__logo {
     padding-left: 16px;
@@ -38,7 +28,6 @@ export const TopNavStart = styled.div`
 
 export const TopNavCenter = styled.div`
   display: flex;
-  flex: 1;
   justify-content: center;
 
   .topNav__option {
@@ -75,6 +64,7 @@ export const TopNavCenter = styled.div`
 export const TopNavEnd = styled.div`
   display: flex;
   align-items: center;
+  width: 295px;
 
   .topNav__info {
     display: flex;
@@ -87,5 +77,10 @@ export const TopNavEnd = styled.div`
 
   .topNav__buttonGroup {
     display: flex;
+
+    button {
+      height: 40px;
+      width: 40px;
+    }
   }
 `;

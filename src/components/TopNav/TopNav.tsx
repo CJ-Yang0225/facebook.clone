@@ -1,10 +1,5 @@
-import React, { useState } from "react";
-import {
-  TopNavContainer,
-  TopNavStart,
-  TopNavCenter,
-  TopNavEnd,
-} from "./TopNav.styles";
+import React from "react";
+import { TopNavStart, TopNavCenter, TopNavEnd } from "./TopNav.styles";
 import {
   Search,
   Home,
@@ -23,7 +18,7 @@ import fbLogo from "../../images/f_logo_RGB-Hex-Blue_512.png";
 
 const TopNav: React.FC = () => {
   return (
-    <TopNavContainer className="topNav">
+    <>
       <TopNavStart className="topNav__start">
         <img src={fbLogo} alt="Facebook Logo" className="topNav__logo" />
         <div className="topNav__search">
@@ -55,7 +50,7 @@ const TopNav: React.FC = () => {
       <TopNavEnd className="topNav__end">
         <div className="topNav__info">
           <AccountCircle fontSize="large" />
-          <h4>Jerold Yang</h4>
+          <h4>Jerry Yang</h4>
         </div>
         <div className="topNav__buttonGroup">
           <IconButton>
@@ -72,7 +67,7 @@ const TopNav: React.FC = () => {
           </IconButton>
         </div>
       </TopNavEnd>
-    </TopNavContainer>
+    </>
   );
 };
 

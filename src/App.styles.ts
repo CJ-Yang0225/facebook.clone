@@ -11,7 +11,7 @@ export const Header = styled.nav`
   box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
 `;
 
-export const Container = styled.div`
+export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   height: 100vh;

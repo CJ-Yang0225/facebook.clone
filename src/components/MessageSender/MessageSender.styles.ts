@@ -40,7 +40,7 @@ export const MessageSenderContainer = styled.div`
   .messageSender__bottom {
     display: flex;
     justify-content: space-evenly;
-    padding: 0 16px;
+    padding: 0 8px;
   }
 `;
 
@@ -50,11 +50,15 @@ const MessageSenderOption = styled.div`
   justify-content: center;
   align-items: center;
   color: gray;
-  margin: 5px;
+  margin: 8px;
+
+  h4 {
+    margin: 12px 0;
+  }
 
   &:hover {
     background-color: #eff2f5;
-    border-radius: 16px;
+    border-radius: 8px;
   }
 `;
 

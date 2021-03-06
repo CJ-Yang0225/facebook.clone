@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+
+// Material-UI
 import { Avatar } from "@material-ui/core";
 import { InsertEmoticon, PhotoLibrary, Videocam } from "@material-ui/icons";
+
+// Styled
 import {
   MessageSenderContainer,
   RedOption,
@@ -8,15 +12,32 @@ import {
   OrangeOption,
 } from "./MessageSender.styles";
 
-const MessageSender = () => {
+// Firebase
+import firebase from "firebase/app";
+import "firebase/firestore";
+import db from "../../firebase/config";
+
+// Context
+import { useUserContext } from "../ContextProvider/ContextProvider";
+
+const MessageSender: React.FC = () => {
+  const [message, setMessage] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
+  const [{ user }, dispatch] = useUserContext();
+
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     setMessage("");
     setImageUrl("");
-  };
 
-  const [message, setMessage] = useState("");
-  const [imageUrl, setImageUrl] = useState("");
+    db.collection("posts").add({
+      message: message,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      profilePic: user.photoURL,
+      username: user.displayName,
+      image: imageUrl,
+    });
+  };
 
   return (
     <MessageSenderContainer className="messageSender">
@@ -25,7 +46,7 @@ const MessageSender = () => {
         <form>
           <input
             type="text"
-            placeholder="在想些什麼？"
+            placeholder={`${user.displayName}，在想些什麼？`}
             value={message}
             onChange={({ target: { value } }) => setMessage(value)}
           />

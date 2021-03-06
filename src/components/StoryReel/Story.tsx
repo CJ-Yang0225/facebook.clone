@@ -1,5 +1,9 @@
 import React from "react";
+
+// Material-UI
 import { Avatar } from "@material-ui/core";
+
+// Styled
 import { StoryWrapper } from "./Story.styles";
 
 export type StoryProps = {

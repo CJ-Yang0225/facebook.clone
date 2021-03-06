@@ -1,11 +1,15 @@
 import React from "react";
+
+// Material-UI
 import { Avatar } from "@material-ui/core";
+
+// Styled
 import { SidebarTabWrapper } from "./SidebarTab.styles";
 
 export type SidebarTabProps = {
   title: string;
-  src: string | null;
-  Icon: any | null;
+  src?: string | null;
+  Icon?: any | null;
 };
 
 const SidebarTab: React.FC<SidebarTabProps> = ({ title, src, Icon }) => {

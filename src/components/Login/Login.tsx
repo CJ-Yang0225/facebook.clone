@@ -1,8 +1,16 @@
 import React from "react";
+
+// Styled
 import { LoginWrapper } from "./Login.styles";
+
+// Images
 import fbLogo from "../../images/f_logo_RGB-Hex-Blue_512.png";
 import fbTextLogo from "../../images/Facebook-Logo.wine.png";
+
+// Firebase
 import { auth, googleProvider } from "../../firebase/config";
+
+// Context
 import { useUserContext } from "../ContextProvider/ContextProvider";
 
 const Login: React.FC = () => {

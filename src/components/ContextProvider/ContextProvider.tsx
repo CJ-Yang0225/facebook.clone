@@ -1,10 +1,4 @@
-import React, {
-  createContext,
-  ReactNode,
-  Reducer,
-  useContext,
-  useReducer,
-} from "react";
+import React, { createContext, ReactNode, useContext, useReducer } from "react";
 
 enum ActionType {
   SET_USER = "SET_USER",

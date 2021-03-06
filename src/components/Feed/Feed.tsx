@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
+
+// Components
 import Post from "./Post/Post";
+
+// Firebase
 import firebase from "firebase/app";
 import "firebase/firestore";
 import db from "../../firebase/config";

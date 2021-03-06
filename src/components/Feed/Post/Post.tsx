@@ -1,12 +1,10 @@
-import { Avatar } from "@material-ui/core";
-import {
-  AccountCircle,
-  ChatBubbleOutline,
-  ExpandMoreOutlined,
-  NearMe,
-  ThumbUp,
-} from "@material-ui/icons";
 import React from "react";
+
+//Material-UI
+import { Avatar } from "@material-ui/core";
+import { ChatBubbleOutline, NearMe, ThumbUp } from "@material-ui/icons";
+
+// Styled
 import { PostContainer } from "./Post.styles";
 
 type PostProps = {

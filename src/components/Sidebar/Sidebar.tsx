@@ -1,9 +1,9 @@
 import React from "react";
-import SidebarTab from "./SidebarTab";
+
+// Material-UI
 import {
   DateRange,
   ExpandMore,
-  GitHub,
   History,
   OndemandVideo,
   People,
@@ -11,17 +11,26 @@ import {
   SupervisedUserCircle,
 } from "@material-ui/icons";
 
+// Components
+import SidebarTab from "./SidebarTab";
+
+// Context
+import { useUserContext } from "../ContextProvider/ContextProvider";
+
 const Sidebar: React.FC = () => {
+  const [{ user }, dispatch] = useUserContext();
+  console.log(user);
+
   return (
     <div className="sidebar">
-      <SidebarTab title="CJ-Yang0225" src="" Icon={GitHub} />
-      <SidebarTab title="朋友" src="" Icon={People} />
-      <SidebarTab title="社團" src="" Icon={SupervisedUserCircle} />
-      <SidebarTab title="Marketplace" src="" Icon={Storefront} />
-      <SidebarTab title="Watch" src="" Icon={OndemandVideo} />
-      <SidebarTab title="活動" src="" Icon={DateRange} />
-      <SidebarTab title="動態回顧" src="" Icon={History} />
-      <SidebarTab title="顯示更多" src="" Icon={ExpandMore} />
+      <SidebarTab title={user.displayName} src={user.photoURL} />
+      <SidebarTab title="朋友" Icon={People} />
+      <SidebarTab title="社團" Icon={SupervisedUserCircle} />
+      <SidebarTab title="Marketplace" Icon={Storefront} />
+      <SidebarTab title="Watch" Icon={OndemandVideo} />
+      <SidebarTab title="活動" Icon={DateRange} />
+      <SidebarTab title="動態回顧" Icon={History} />
+      <SidebarTab title="顯示更多" Icon={ExpandMore} />
     </div>
   );
 };

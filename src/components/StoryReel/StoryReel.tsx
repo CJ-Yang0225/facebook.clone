@@ -11,11 +11,10 @@ import lbj23 from "../../images/story/lbj23.jpg";
 import whoWillWin from "../../images/story/who_will_win.jpg";
 import sc30 from "../../images/story/sc30.jpg";
 
-// Story profile
+// Story profile images
 import nba from "../../images/story/nba.jpg";
 import espn from "../../images/story/espn.jpg";
 import br from "../../images/story/br.jpg";
-
 
 const StoryReel: React.FC = () => {
   return (

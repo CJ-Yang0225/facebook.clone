@@ -27,7 +27,7 @@ export const LoginWrapper = styled.div`
     width: 312px;
     background-color: #2e81f4;
     color: #eff2f5;
-    font-size: large ;
+    font-size: large;
     font-weight: 800;
     transition: all 0.3s;
 

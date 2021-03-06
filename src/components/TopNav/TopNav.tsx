@@ -1,5 +1,6 @@
 import React from "react";
-import { TopNavStart, TopNavCenter, TopNavEnd } from "./TopNav.styles";
+
+// Material-UI
 import {
   Search,
   Home,
@@ -7,16 +8,24 @@ import {
   OndemandVideo,
   Storefront,
   SupervisedUserCircle,
-  AccountCircle,
   Add,
   Forum,
   NotificationsActive,
   ExpandMore,
 } from "@material-ui/icons";
-import { IconButton } from "@material-ui/core";
+import { Avatar, IconButton } from "@material-ui/core";
+
+// Styled
+import { TopNavStart, TopNavCenter, TopNavEnd } from "./TopNav.styles";
+
+// Images
 import fbLogo from "../../images/f_logo_RGB-Hex-Blue_512.png";
 
+// Context
+import { useUserContext } from "../ContextProvider/ContextProvider";
+
 const TopNav: React.FC = () => {
+  const [{ user }, dispatch] = useUserContext();
   return (
     <>
       <TopNavStart className="topNav__start">
@@ -49,8 +58,8 @@ const TopNav: React.FC = () => {
       </TopNavCenter>
       <TopNavEnd className="topNav__end">
         <div className="topNav__info">
-          <AccountCircle fontSize="large" />
-          <h4>Jerry Yang</h4>
+          <Avatar src={user.photoURL} />
+          <h4>{user.displayName}</h4>
         </div>
         <div className="topNav__buttonGroup">
           <IconButton>

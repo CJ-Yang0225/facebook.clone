@@ -16,6 +16,11 @@ export const Content = styled.div`
   justify-content: space-between;
   height: 100vh;
   background-color: #f0f2f5;
+
+  @media screen and (max-width: 1060px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 export const Main = styled.main`
@@ -31,8 +36,16 @@ export const Aside = styled.aside`
   width: 340px;
   padding: 16px;
   box-sizing: border-box;
+
+  @media screen and (max-width: 1080px) {
+    display: none;
+  }
 `;
 
 export const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
   width: 340px;
+  height: 100%;
+  box-sizing: border-box;
 `;

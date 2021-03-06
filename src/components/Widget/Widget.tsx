@@ -12,7 +12,7 @@ const Widget: React.FC = () => {
         scrolling="no"
         frameBorder="0"
         allow="encrypted-media"
-      ></iframe>
+      />
     </>
   );
 };

@@ -4,6 +4,7 @@ export const MessageSenderContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 24px;
+  margin-bottom: 16px;
   border-radius: 16px;
   box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
 
@@ -11,8 +12,8 @@ export const MessageSenderContainer = styled.div`
 
   .messageSender__top {
     display: flex;
-    border-bottom: 1px solid #eff2f5;
     padding: 16px;
+    border-bottom: 1px solid #eff2f5;
 
     form {
       flex-grow: 1;
@@ -21,7 +22,7 @@ export const MessageSenderContainer = styled.div`
       input {
         outline-width: 0;
         border: none;
-        padding: 5px 20px;
+        padding: 8px 16px;
         margin: 0 10px;
         border-radius: 99px;
         background-color: #eff2f5;
@@ -33,6 +34,18 @@ export const MessageSenderContainer = styled.div`
 
       button {
         display: none;
+      }
+
+      @media screen and (max-width: 514px) {
+        flex-wrap: wrap;
+
+        input {
+          padding: 12px 16px;
+
+          :first-of-type {
+            margin-bottom: 8px;
+          }
+        }
       }
     }
   }

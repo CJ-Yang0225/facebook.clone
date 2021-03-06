@@ -15,7 +15,7 @@ export const StoryWrapper = styled.div<StoryWrapperProps>`
     url(${(props: StoryWrapperProps) => props.image});
   box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
-  margin:0 4px;
+  margin: 0 4px;
   transition: transform 100ms ease-in;
   cursor: pointer;
 
@@ -33,7 +33,8 @@ export const StoryWrapper = styled.div<StoryWrapperProps>`
   }
 
   .storyReel__avatar {
-    margin: 8px;
+    margin-top: 8px;
+    margin-left: 8px;
     border: 4px solid #2e81f4;
   }
 `;

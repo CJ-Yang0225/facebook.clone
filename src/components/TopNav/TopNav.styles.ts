@@ -24,6 +24,12 @@ export const TopNavStart = styled.div`
       outline-width: 0;
     }
   }
+  @media screen and (max-width: 600px) {
+    justify-content: flex-start;
+    .topNav__search {
+      display: none;
+    }
+  }
 `;
 
 export const TopNavCenter = styled.div`
@@ -59,10 +65,15 @@ export const TopNavCenter = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
 `;
 
 export const TopNavEnd = styled.div`
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   width: 295px;
 
@@ -71,12 +82,19 @@ export const TopNavEnd = styled.div`
     align-items: center;
 
     h4 {
+      margin: 0;
       margin-left: 8px;
+    }
+
+    @media screen and (max-width: 1360px) {
+      display: none;
     }
   }
 
   .topNav__buttonGroup {
     display: flex;
+    justify-content: space-between;
+    margin-left: 8px;
 
     button {
       height: 40px;

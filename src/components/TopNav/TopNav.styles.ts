@@ -95,6 +95,7 @@ export const TopNavEnd = styled.div`
 
   .topNav__info {
     display: flex;
+    align-items: center;
 
     h4 {
       margin: 0;

@@ -4,7 +4,7 @@ export const PostContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 16px;
+  margin: 0 4px 16px 4px;
   padding: 12px 16px;
   border-radius: 16px;
   background-color: white;

@@ -3,8 +3,7 @@ import styled from "@emotion/styled";
 export const MessageSenderContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
-  margin-bottom: 16px;
+  margin: 24px 4px 16px 4px;
   border-radius: 16px;
   box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
 
@@ -37,7 +36,7 @@ export const MessageSenderContainer = styled.div`
         display: none;
       }
 
-      @media screen and (max-width: 514px) {
+      @media screen and (max-width: 565px) {
         flex-wrap: wrap;
 
         input {

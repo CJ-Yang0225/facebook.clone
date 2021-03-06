@@ -42,7 +42,7 @@ const MessageSender: React.FC = () => {
   return (
     <MessageSenderContainer className="messageSender">
       <div className="messageSender__top">
-        <Avatar />
+        <Avatar src={user.photoURL} />
         <form>
           <input
             type="text"

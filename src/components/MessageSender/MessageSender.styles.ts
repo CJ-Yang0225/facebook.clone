@@ -26,6 +26,7 @@ export const MessageSenderContainer = styled.div`
         margin: 0 10px;
         border-radius: 99px;
         background-color: #eff2f5;
+        font-size: 1rem;
       }
 
       input:first-of-type {

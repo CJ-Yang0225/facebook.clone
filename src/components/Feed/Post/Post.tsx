@@ -1,6 +1,6 @@
 import React from "react";
 
-//Material-UI
+// Material-UI
 import { Avatar } from "@material-ui/core";
 import { ChatBubbleOutline, NearMe, ThumbUp } from "@material-ui/icons";
 

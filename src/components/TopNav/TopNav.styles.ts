@@ -22,10 +22,13 @@ export const TopNavStart = styled.div`
       border: none;
       background-color: transparent;
       outline-width: 0;
+      font-size: 0.9rem;
     }
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 660px) {
     justify-content: flex-start;
+    margin: 4px 0;
+
     .topNav__search {
       display: none;
     }
@@ -33,12 +36,20 @@ export const TopNavStart = styled.div`
 `;
 
 export const TopNavCenter = styled.div`
+  flex-grow: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: stretch;
+  height: 100%;
+  max-width: 680px;
 
   .topNav__option {
-    cursor: pointer;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 4px 28px;
+    cursor: pointer;
 
     .MuiSvgIcon-root {
       color: #65676b;
@@ -67,7 +78,11 @@ export const TopNavCenter = styled.div`
   }
 
   @media screen and (max-width: 960px) {
-    display: none;
+    margin: 4px 0;
+
+    .topNav__option {
+      display: none;
+    }
   }
 `;
 
@@ -76,10 +91,10 @@ export const TopNavEnd = styled.div`
   justify-content: flex-end;
   align-items: center;
   width: 295px;
+  height: 100%;
 
   .topNav__info {
     display: flex;
-    align-items: center;
 
     h4 {
       margin: 0;

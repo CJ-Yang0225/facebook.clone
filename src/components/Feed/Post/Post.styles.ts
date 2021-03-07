@@ -46,6 +46,7 @@ export const PostContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 12px;
+    color: #808080;
 
     .post__option {
       display: flex;

@@ -17,6 +17,7 @@ export const TopNavStart = styled.div`
     padding: 8px;
     margin-left: 8px;
     border-radius: 32px;
+    width: fit-content;
 
     input {
       border: none;
@@ -25,12 +26,15 @@ export const TopNavStart = styled.div`
       font-size: 0.9rem;
     }
   }
-  @media screen and (max-width: 660px) {
+  
+  @media screen and (max-width: 545px) {
     justify-content: flex-start;
     margin: 4px 0;
+    width: fit-content;
 
-    .topNav__search {
-      display: none;
+    .topNav__search input {
+      padding: 0;
+      width: 0;
     }
   }
 `;
@@ -77,7 +81,7 @@ export const TopNavCenter = styled.div`
     }
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1000px) {
     margin: 4px 0;
 
     .topNav__option {
@@ -101,10 +105,6 @@ export const TopNavEnd = styled.div`
       margin: 0;
       margin-left: 8px;
     }
-
-    @media screen and (max-width: 1360px) {
-      display: none;
-    }
   }
 
   .topNav__buttonGroup {
@@ -115,6 +115,17 @@ export const TopNavEnd = styled.div`
     button {
       height: 40px;
       width: 40px;
+    }
+  }
+
+  @media screen and (max-width: 368px) {
+    .topNav__buttonGroup {
+      display: flex;
+      justify-content: flex-end;
+
+      button:not(:last-of-type) {
+        display: none;
+      }
     }
   }
 `;

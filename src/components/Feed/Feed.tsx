@@ -28,9 +28,9 @@ const Feed: React.FC = () => {
 
   return (
     <>
-      {posts.map(({ data }) => (
+      {posts.map(({ data }, index) => (
         <Post
-          key={data.id}
+          key={index}
           profilePic={data.profilePic}
           username={data.username}
           message={data.message}

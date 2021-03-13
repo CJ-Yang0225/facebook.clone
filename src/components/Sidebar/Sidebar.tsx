@@ -19,7 +19,6 @@ import { useUserContext } from "../ContextProvider/ContextProvider";
 
 const Sidebar: React.FC = () => {
   const [{ user }, dispatch] = useUserContext();
-  console.log(user);
 
   return (
     <div className="sidebar">
